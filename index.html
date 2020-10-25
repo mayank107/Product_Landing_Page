@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+       
+        @media only screen and (max-width: 768px) {
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        .flex-container {
+            display: flex;
+            /* justify-content: center; */
+        }
+    </style> -->
+</head>
+
+<body>
+    <header id="header">
+        <center>
+
+            <nav id="nav-bar">
+                <img id="header-img" src="https://images-na.ssl-images-amazon.com/images/I/41%2BFrnuoLnL.jpg">
+                <a class="nav-link" href="#Learn-More">Learn More</a>
+                <a class="nav-link" href="#Request-coupon">Request Coupon</a>
+                <a class="nav-link" href="#buy-online">Buy Online</a>
+            </nav>
+        </center>
+    </header>
+</br>
+
+    <section id="Learn-More">
+        <center>
+            <h1 id="title"> The Shure microphone of The Joe Rogan Experience</h1>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_IBDvROmdGU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </center>
+    </section>
+
+    <section id="Request-coupon">
+        <center>
+            <form action="https://www.freecodecamp.com" id="form">
+                <input type="email" name="email" id="email" placeholder="gtehwhebfirggrgte@.com">
+                <input type="submit" id="submit">
+            </form>
+        </center>
+    </section>
+
+    <section id="buy-online">
+        <center>
+            <div class="flex-container">
+                <div><a href="amazon-affiliate">Buy on Amazon</a></div>
+                <div><a href="amazon-affiliate">Buy on Flipkart</a></div>
+                <div><a href="amazon-affiliate">Buy on Shure</a></div>
+            </div>
+        </center>
+    </section>
+   
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        console.log("started")
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+
+</body>
+
+</html> 
+
+
+
+
+
